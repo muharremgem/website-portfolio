@@ -35,18 +35,21 @@ export default function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent  "
           target="_blank"
+
         />
         <SocialIcon
           url="https://github.com/muharremgem"
           fgColor="gray"
           bgColor="transparent  "
           target="_blank"
+
         />
         <SocialIcon
           url="https://www.instagram.com/muharrem__gem/"
           fgColor="gray"
           bgColor="transparent  "
           target="_blank"
+
         />
       </motion.div>
 
