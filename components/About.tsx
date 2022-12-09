@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
+//
 https: type Props = {};
 
 export default function About({}: Props) {
@@ -9,20 +11,26 @@ export default function About({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl">
         About
       </h3>
-      <div className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]">
-        <motion.img
-          initial={{
-            x: -200,
-            opacity: 0,
-          }}
-          transition={{
-            duration: 1.2,
-          }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          src="https://pbs.twimg.com/profile_images/1447671101530775553/PpbiCpy7_400x400.jpg"
+      <motion.div
+        initial={{
+          x: -200,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.2,
+        }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56   md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] relative"
+      >
+        <Image
+          layout="fill"
+          objectFit="cover"
+          className="rounded-full md:rounded-lg"
+          src="https://instagram.fist2-4.fna.fbcdn.net/v/t51.2885-15/258856017_938530360399341_882327211968710648_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fist2-4.fna.fbcdn.net&_nc_cat=109&_nc_ohc=335egfXsDckAX_xmSRy&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjcxMjA2Mjg0OTEyNTc2NTg3Mg%3D%3D.2-ccb7-5&oh=00_AfBevy6cTC-K88r0B48A59G1PGOawAIdOJN59vkVASgTVA&oe=63991E34&_nc_sid=30a2ef"
+          alt="aboutimg"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

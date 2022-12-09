@@ -22,7 +22,7 @@ export default function Hero({}: Props) {
       <div className="relative h-32 w-32 mx-auto">
         <Image
           src={
-            "https://pbs.twimg.com/profile_images/1447671101530775553/PpbiCpy7_400x400.jpg"
+            "https://pbs.twimg.com/profile_images/1516050130608214016/MM0EaR6j_400x400.jpg"
           }
           className=" rounded-full"
           layout="fill"
