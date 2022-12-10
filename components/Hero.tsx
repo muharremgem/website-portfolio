@@ -30,6 +30,7 @@ export default function Hero({}: Props) {
           alt="img"
         />
       </div>
+
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[13px]">
           Software Developer
