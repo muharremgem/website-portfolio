@@ -40,7 +40,6 @@ export default function About({}: Props) {
           alt="aimg"
         />
       </motion.div>
-
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
           Here is a
