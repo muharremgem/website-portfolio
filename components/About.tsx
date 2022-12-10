@@ -20,6 +20,7 @@ export default function About({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl">
         About
       </h3>
+
       <motion.div
         initial={{
           x: -200,
