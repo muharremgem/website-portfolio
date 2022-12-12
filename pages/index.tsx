@@ -28,7 +28,8 @@ const Home: NextPage = () => {
       </section>
       {/* Skills */}
 
-      {/* Projects */}
+      {/* Projects */}0
+      
       {/* Contact Me */}
     </div>
   );
