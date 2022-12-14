@@ -3,6 +3,7 @@ import Head from "next/head";
 import About from "../components/About";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Skills from "../components/Skills";
 import WorkExperience from "../components/WorkExperience";
 
 const Home: NextPage = () => {
@@ -11,7 +12,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Muharrem GEM Portfolio</title>
       </Head>
-
       {/* Header */}
       <Header />
       {/* Hero */}
@@ -27,9 +27,11 @@ const Home: NextPage = () => {
         <WorkExperience />
       </section>
       {/* Skills */}
+      <section id="skills" className="snap-start">
+        <Skills />
+      </section>
+      {/* Projects */}
 
-      {/* Projects */}0
-      
       {/* Contact Me */}
     </div>
   );
