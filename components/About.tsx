@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { urlFor } from "../sanity";
+import { PageInfo } from "../typings";
 
-https: type Props = {};
+https: type Props = {
+  pageInfo: PageInfo;
+};
 
-export default function About({}: Props) {
+export default function About({ pageInfo }: Props) {
   return (
     <motion.div
       initial={{
@@ -30,7 +34,7 @@ export default function About({}: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         className="object-cover rounded-full md:rounded-lg -mb-20 md:mb-0 flex-shrink-0 w-56 h-56   md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] relative"
-        src=""
+        src={urlFor(pageInfo?.profilePic).url()}
         alt="aimg"
       />
       <div className="space-y-10 px-0 md:px-10">
@@ -39,21 +43,7 @@ export default function About({}: Props) {
           <span className="underline decoration-[#F7AB0A]/50"> little </span>
           background
         </h4>
-        <p className="text-sm">
-          1+ years experienced in IT and an expert front-end developer,
-          interested in writing codes, skilled at developing complex solutions,
-          creating responsive designs, possessing strong creative thinking
-          skills, high energy and integrity. Ability to create algorithms
-          effectively, and interact positively and communicate appropriately
-          with team members. Quickly grasp new technologies and concepts to
-          develop innovative and creative solutions to problems. Always eager to
-          learn various technologies, tools and libraries. Especially interested
-          in the Front end/Web Development, HTML, CSS, JS, React. Excited to
-          learn new things and improve, lifetime student.You can access my
-          projects from my Github account. | HTML | CSS | Js | React | Bootstrap
-          | Tailwind |Basic Python | Basic SQL | Linux | Agile - Scrum - Kanban
-          - Jira | SDLC | Git | GitHub | JQuery | Sass | Network |{" "}
-        </p>
+        <p className="text-sm">{pageInfo?.backgroundInformation}</p>
       </div>
     </motion.div>
   );
