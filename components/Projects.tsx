@@ -25,7 +25,7 @@ const Projects = ({ projects }: Props) => {
 
       <div
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
-         scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
+         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
       >
         {projects?.map((project, i) => (
           <div
@@ -46,9 +46,9 @@ const Projects = ({ projects }: Props) => {
               src={urlFor(project?.image).url()}
               alt=""
             />
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#F7AB0A]/50 ">
+            <div className="space-y-5 px-0 md:px-10 max-w-6xl">
+              <h4 className="text-3xl font-semibold text-center">
+                <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>
                 {project?.title}
@@ -66,7 +66,7 @@ const Projects = ({ projects }: Props) => {
                 {project?.technologies.map((technology) => (
                   <img
                     className="h-10 w-10"
-                    key={technology._id}
+                    key={technology?._id}
                     src={urlFor(technology.image).url()}
                     alt=""
                   />

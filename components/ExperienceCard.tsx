@@ -18,7 +18,7 @@ export default function ExperienceCard({ experience }: Props) {
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="rounded-full w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center"
+        className=" w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center"
         src={urlFor(experience?.companyImage).url()}
         alt="sirketlogo"
       />
@@ -30,7 +30,7 @@ export default function ExperienceCard({ experience }: Props) {
             <img
               key={technology._id}
               className="h-10 w-10 rounded-full"
-              src={urlFor(technology.image).url()}
+              src={urlFor(technology?.image).url()}
             />
           ))}
         </div>
