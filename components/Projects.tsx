@@ -52,6 +52,15 @@ const Projects = ({ projects }: Props) => {
                   Case Study {i + 1} of {projects.length}:
                 </span>
                 {project?.title}
+                <div>
+                  <a
+                    href={project?.linkToBuild}
+                    target="_blank"
+                    className="underline text-orange-500 text-lg"
+                  >
+                    Project Link
+                  </a>
+                </div>
               </h4>
               <div className="flex items-center space-x-2 justify-center">
                 {project?.technologies.map((technology) => (
