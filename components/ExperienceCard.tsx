@@ -10,25 +10,17 @@ export default function ExperienceCard({}: Props) {
       className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900] snap-center
      bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden"
     >
-      <motion.div
+      <motion.img
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="w-32 h-32 xl:w-[200px] xl:h-[200px] relative"
-      >
-        <Image
-          src={
-            "https://w7.pngwing.com/pngs/628/58/png-transparent-google-logo-google-search-google-now-google-text-trademark-service-thumbnail.png"
-          }
-          className="rounded-full"
-          objectFit="cover"
-          objectPosition="center"
-          layout="fill"
-          alt="sirketlogo"
-        />
-      </motion.div>
-
+        src={
+          "https://w7.pngwing.com/pngs/628/58/png-transparent-google-logo-google-search-google-now-google-text-trademark-service-thumbnail.png"
+        }
+        className="rounded-full w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center"
+        alt="sirketlogo"
+      />
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light ">CEO of Google</h4>
         <p className="font-bold text-2xl mt-1 ">GOOGLE</p>

@@ -1,3 +1,4 @@
+import { MotionConfig } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -19,17 +20,14 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <div className="relative h-32 w-32 mx-auto">
-        <Image
-          src={
-            "https://pbs.twimg.com/profile_images/1516050130608214016/MM0EaR6j_400x400.jpg"
-          }
-          className=" rounded-full"
-          layout="fill"
-          objectFit="cover"
-          alt="img"
-        />
-      </div>
+
+      <img
+        src={
+          "https://pbs.twimg.com/profile_images/1516050130608214016/MM0EaR6j_400x400.jpg"
+        }
+        className=" rounded-full h-32 w-32 mx-auto object-cover "
+        alt="img"
+      />
 
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[13px]">
