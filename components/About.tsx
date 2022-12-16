@@ -20,7 +20,7 @@ export default function About({ pageInfo }: Props) {
       className="h-screen flex flex-col relative text-center md:text-left 
       md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl mm:text-hidden">
         About
       </h3>
       <motion.img
@@ -37,7 +37,7 @@ export default function About({ pageInfo }: Props) {
         src={urlFor(pageInfo?.profilePic).url()}
         alt="aimg"
       />
-      <div className="space-y-10 px-0 md:px-10">
+      <div className="space-y-10 px-0 md:px-10 ">
         <h4 className="text-4xl font-semibold">
           Here is a
           <span className="underline decoration-[#F7AB0A]/50"> little </span>
