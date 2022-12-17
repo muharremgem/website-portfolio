@@ -69,7 +69,6 @@ function ContactMe({}: Props) {
             className="contactInput"
             type="text"
           />
-
           <textarea
             {...register("message")}
             placeholder="Message"
