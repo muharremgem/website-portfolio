@@ -64,7 +64,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://lh3.googleusercontent.com/ogw/AOh-ky2NxnN8LwmKjbz2N3OmnUwIU2IELpJqQD-OOCcQFg=s64-c-mo"
+              src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
               alt=""
             />
           </div>
