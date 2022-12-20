@@ -9,7 +9,7 @@ type Props = {
 
 export default function ExperienceCard({ experience }: Props) {
   return (
-    <article className="flex flex-col  justify-center  text-center rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] md:h-[650px] snap-center      md:bg-[#292929]   mm:p-[5rem] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden mm:bg-[rgb(36,36,36)] xl:p-10  ">
+    <article className="flex flex-col  justify-center  text-center rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] md:h-[650px] snap-center scrollbar      md:bg-[#292929]   mm:p-[5rem] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden mm:bg-[rgb(36,36,36)] xl:p-10  ">
       {/*  mt-10 */}
       {/* bg- */}
       <motion.img
@@ -34,23 +34,26 @@ export default function ExperienceCard({ experience }: Props) {
           {experience.technologies?.map((technology) => (
             <img
               key={technology._id}
-              className="md:h-10 md:w-10 rounded-lg mm:h-[35px] mm:w-[35px]"
+              className="md:h-10 md:w-10 rounded-lg mm:h-[30px] mm:w-[30px]"
               src={urlFor(technology?.image).url()}
             />
           ))}
         </div>
         <div>
-          <p className="uppercase py-5 text-gray-300">
+          <p className="uppercase py-5 text-gray-300 ">
             <>
-              {new Date(experience.dateStarted).toDateString()} -
+              {new Date(experience.dateStarted).toDateString()} -{" "}
               {experience.isCurrentlyWorkingHere
                 ? " Present"
-                : new Date(experience.dateEnded).toDateString}
+                : new Date(experience.dateEnded).toDateString()}
             </>
           </p>
         </div>
 
-        <ul className="list-disc list-inside  space-y-4 ml-5 text-lg max-h-96 overflow-y-scroll  scrollbar-thin scrollbar-track-black text-left  scrollbar-thumb-[#F7AB0A]/80  ">
+        <ul
+          className="list-disc list-inside space-y-4 ml-5 text-lg max-h-96  overflow-y-scroll 
+         scrollbar scrollbar-track-black text-left  scrollbar-thumb-[#F7AB0A]/80  "
+        >
           {experience.points?.map((point, i) => (
             <li key={i}>{point}</li>
           ))}

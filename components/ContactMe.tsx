@@ -25,8 +25,9 @@ function ContactMe({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px]  text-gray-500 text-2xl mm:hidden md:block">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10 ">
-        <h4 className="text-4xl font-semibold text-center mm:hidden md:block">
+
+      <div className="flex flex-col space-y-10  ">
+        <h4 className="text-4xl mm:text-3xl font-semibold text-center mm:hidden md:block mm:mt-16">
           I have got just what you need.
           <span className="underline decoration-[#F7AB0A]/50">Lets Talk</span>
         </h4>
