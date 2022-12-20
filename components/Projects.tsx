@@ -44,14 +44,14 @@ const Projects = ({ projects }: Props) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
+              className="mm:max-w-[300px] mm:mt-[5rem] xx:block rounded-lg max-w-[500px]"
               alt=""
             />
             <div className="space-y-5 px-0 md:px-10 max-w-6xl">
               <h4 className="text-3xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
-                  Case Study {i + 1} of {projects.length}:
+                  {project?.title}
                 </span>
-                {project?.title}
                 <div>
                   <a
                     href={project?.linkToBuild}
@@ -65,7 +65,7 @@ const Projects = ({ projects }: Props) => {
               <div className="flex items-center space-x-2 justify-center">
                 {project?.technologies.map((technology) => (
                   <img
-                    className="h-10 w-10"
+                    className="h-10 w-10 rounded-md"
                     key={technology?._id}
                     src={urlFor(technology.image).url()}
                     alt=""
@@ -73,7 +73,7 @@ const Projects = ({ projects }: Props) => {
                 ))}
               </div>
 
-              <p className="text-lg text-center md:text-left">
+              <p className="text-lg text-center md:text-left mm:hidden md:block">
                 {project?.summary}
               </p>
             </div>
