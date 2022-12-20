@@ -44,7 +44,7 @@ const Projects = ({ projects }: Props) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
-              className="mm:max-w-[300px] mm:mt-[5rem] xx:block rounded-lg max-w-[500px]"
+              className="mm:max-w-[300px] mm:mt-[5rem] lg:max-w-[600px] xx:block rounded-lg max-w-[500px]"
               alt=""
             />
             <div className="space-y-5 px-0 md:px-10 max-w-6xl">
