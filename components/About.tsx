@@ -44,7 +44,9 @@ export default function About({ pageInfo }: Props) {
           Here is a<span className="text-green-700"> little </span>
           background
         </h4>
-        <p className="text-sm">{pageInfo?.backgroundInformation}</p>
+        <p className="text-sm md:text-xl mm:text-[12px]  text-left overflow-auto">
+          {pageInfo?.backgroundInformation}
+        </p>
       </div>
     </motion.div>
   );
