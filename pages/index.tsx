@@ -14,6 +14,7 @@ import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchSocial } from "../utils/fetchSocials";
+import logo from "../assets/mg.jpg";
 
 type Props = {
   pageInfo: PageInfo;
@@ -64,7 +65,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
+              src="https://react-random-user-app.vercel.app/static/media/mg.488ca4f7.jpg"
               alt=""
             />
           </div>
