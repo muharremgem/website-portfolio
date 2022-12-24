@@ -8,7 +8,6 @@ type Inputs = {
   subject: string;
   message: string;
 };
-
 type Props = {};
 
 function ContactMe({}: Props) {
