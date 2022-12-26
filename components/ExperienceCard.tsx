@@ -18,9 +18,8 @@ export default function ExperienceCard({ experience }: Props) {
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
         src={urlFor(experience?.companyImage).url()}
-        className="rounded-full w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center 
-        "
-        alt="sirketlogo"
+        className="rounded-full w-32 h-32 xl:w-[200px] xl:h-[200px] object-cover object-center"
+        alt="logo"
       />
 
       <div className="px-0 md:px-10 flex flex-col justify-center items-center  ">
@@ -49,7 +48,6 @@ export default function ExperienceCard({ experience }: Props) {
             </>
           </p>
         </div>
-
         <ul
           className="list-disc list-inside space-y-4 ml-5 text-lg max-h-96  overflow-y-scroll 
          scrollbar scrollbar-track-black text-left  scrollbar-thumb-[#F7AB0A]/80  "
