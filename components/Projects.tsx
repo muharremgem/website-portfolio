@@ -72,7 +72,6 @@ const Projects = ({ projects }: Props) => {
                   />
                 ))}
               </div>
-
               <p className="text-lg text-center md:text-left mm:hidden md:block">
                 {project?.summary}
               </p>

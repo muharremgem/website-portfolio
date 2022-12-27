@@ -28,7 +28,6 @@ export default function Hero({ pageInfo }: Props) {
         className=" rounded-full h-32 w-32 mx-auto object-cover "
         alt="img"
       />
-
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[13px]">
           {pageInfo?.role}
