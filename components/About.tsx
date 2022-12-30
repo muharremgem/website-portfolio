@@ -38,7 +38,6 @@ export default function About({ pageInfo }: Props) {
         src={urlFor(pageInfo?.profilePic).url()}
         alt="aimg"
       />
-
       <div className="space-y-3 px-0 md:px-10  md:flex md:flex-col md:gap-6">
         <h4 className="text-4xl font-semibold mm:text-[25px] mm:mt-[5rem] md:text-4xl">
           Here is a<span className="text-green-700"> little </span>
